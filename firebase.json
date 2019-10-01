@@ -1,0 +1,23 @@
+{
+    "functions": {
+
+    },
+    "hosting": {
+      "public": "",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/getProxyList",
+          "function": "getProxyList"
+        },
+        {
+          "source": "/getProxy",
+          "function": "getProxy"
+        }
+      ]
+    }
+  }
